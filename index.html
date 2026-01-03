@@ -18,7 +18,7 @@
     }
 
     .card {
-      max-width: 640px;
+      max-width: 720px;
       width: 100%;
       padding: 32px;
       border-radius: 14px;
@@ -31,7 +31,7 @@
       width: 100%;
       border-radius: 12px;
       margin-bottom: 24px;
-      cursor: pointer;
+      background: black;
     }
 
     h1 {
@@ -65,11 +65,10 @@
   <div class="card">
 
     <video
-      id="meowlVideo"
       src="meowl.mp4"
-      muted
+      controls
+      preload="metadata"
       playsinline
-      preload="auto"
     ></video>
 
     <h1>Akhil Tyagi</h1>
@@ -80,34 +79,9 @@
 
     <div class="links">
       <a href="https://github.com/akh1l1202" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/akh1l1202" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
       <a href="mailto:tyagi.akhil1202@gmail.com">Email</a>
     </div>
   </div>
-
-  <script>
-    const video = document.getElementById("meowlVideo");
-
-    /* Mobile: autoplay muted */
-    video.play().catch(() => {});
-
-    /* Desktop: hover = play with sound */
-    video.addEventListener("mouseenter", () => {
-      video.muted = false;
-      video.play();
-    });
-
-    video.addEventListener("mouseleave", () => {
-      video.pause();
-      video.currentTime = 0;
-      video.muted = true;
-    });
-
-    /* Optional: click to toggle sound/play */
-    video.addEventListener("click", () => {
-      video.muted = !video.muted;
-      video.play();
-    });
-  </script>
 </body>
 </html>
