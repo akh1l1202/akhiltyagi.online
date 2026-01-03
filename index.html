@@ -26,13 +26,14 @@
       text-align: center;
     }
 
-    .avatar {
-      width: 120px;
-      height: 120px;
+    .avatar-video {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 18px;
       border: 2px solid #38bdf8;
+      cursor: pointer;
     }
 
     h1 {
@@ -64,7 +65,16 @@
 
 <body>
   <div class="card">
-    <img src="meowl.jpg" alt="Profile photo" class="avatar" />
+
+    <video
+      id="avatarVideo"
+      class="avatar-video"
+      src="meowl.mp4"
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
 
     <h1>Akhil Tyagi</h1>
     <p>
@@ -78,5 +88,24 @@
       <a href="mailto:tyagi.akhil1202@gmail.com">Email</a>
     </div>
   </div>
+
+  <script>
+    const video = document.getElementById("avatarVideo");
+
+    /* Mobile autoplay (muted + inline) */
+    video.play().catch(() => {
+      /* Autoplay may fail on some desktop browsers until interaction */
+    });
+
+    /* Desktop hover play */
+    video.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  </script>
 </body>
 </html>
