@@ -14,11 +14,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .card {
-      max-width: 520px;
+      max-width: 640px;
+      width: 100%;
       padding: 32px;
       border-radius: 14px;
       background: #020617;
@@ -26,13 +27,10 @@
       text-align: center;
     }
 
-    .avatar-video {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 18px;
-      border: 2px solid #38bdf8;
+    video {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 24px;
       cursor: pointer;
     }
 
@@ -67,11 +65,9 @@
   <div class="card">
 
     <video
-      id="avatarVideo"
-      class="avatar-video"
+      id="meowlVideo"
       src="meowl.mp4"
       muted
-      loop
       playsinline
       preload="auto"
     ></video>
@@ -84,27 +80,33 @@
 
     <div class="links">
       <a href="https://github.com/akh1l1202" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://linkedin.com/in/akh1l1202" target="_blank">LinkedIn</a>
       <a href="mailto:tyagi.akhil1202@gmail.com">Email</a>
     </div>
   </div>
 
   <script>
-    const video = document.getElementById("avatarVideo");
+    const video = document.getElementById("meowlVideo");
 
-    /* Mobile autoplay (muted + inline) */
-    video.play().catch(() => {
-      /* Autoplay may fail on some desktop browsers until interaction */
-    });
+    /* Mobile: autoplay muted */
+    video.play().catch(() => {});
 
-    /* Desktop hover play */
+    /* Desktop: hover = play with sound */
     video.addEventListener("mouseenter", () => {
+      video.muted = false;
       video.play();
     });
 
     video.addEventListener("mouseleave", () => {
       video.pause();
       video.currentTime = 0;
+      video.muted = true;
+    });
+
+    /* Optional: click to toggle sound/play */
+    video.addEventListener("click", () => {
+      video.muted = !video.muted;
+      video.play();
     });
   </script>
 </body>
