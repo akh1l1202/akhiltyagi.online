@@ -2,86 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Akhil Tyagi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .card {
-      max-width: 720px;
-      width: 100%;
-      padding: 32px;
-      border-radius: 14px;
-      background: #020617;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      text-align: center;
-    }
-
-    video {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 24px;
-      background: black;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
-
-    p {
-      color: #94a3b8;
-      line-height: 1.6;
-    }
-
-    .links {
-      margin-top: 22px;
-    }
-
-    .links a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #38bdf8;
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Akhil Tyagi | Full Stack Developer</title>
+  <meta name="description" content="Portfolio and Resume of Akhil Tyagi, a Full Stack Developer and Competitive Programmer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="card">
 
-    <video
-      src="meowl.mp4"
-      controls
-      preload="metadata"
-      playsinline
-    ></video>
+  <main class="container">
+    
+    <!-- Hero Section -->
+    <header>
+      <div class="hero-content">
+        <h4>Hi, my name is</h4>
+        <h1 class="hero-title">Akhil Tyagi.</h1>
+        <h2 class="hero-subtitle">I build things for the web & mobile.</h2>
+        <p>
+          I'm a Full Stack Developer and Competitive Programmer based in Mumbai. 
+          I specialize in building scalable applications using Flutter, Python, React, and Firebase.
+          Currently focusing on building accessible, human-centered products.
+        </p>
+        
+        <div class="social-links">
+          <a href="https://github.com/akh1l1202" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/akh1l1202" target="_blank">LinkedIn</a>
+          <a href="mailto:tyagi.akhil1202@gmail.com">Email Me</a>
+        </div>
+      </div>
+    </header>
 
-    <h1>Akhil Tyagi</h1>
-    <p>
-      Engineering student interested in software development,
-      AI, and building practical systems.
-    </p>
+    <!-- About / Skills Section -->
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-list">
+        <span class="skill-pill">Flutter</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">Firebase</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">TypeScript</span>
+        <span class="skill-pill">Tailwind CSS</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Data Structures</span>
+        <span class="skill-pill">N8N Automation</span>
+      </div>
+    </section>
 
-    <div class="links">
-      <a href="https://github.com/akh1l1202" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-      <a href="mailto:tyagi.akhil1202@gmail.com">Email</a>
-    </div>
-  </div>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Where I've Worked</h2>
+      
+      <div class="timeline-item">
+        <div class="job-header">
+          <h3>Mobile App Dev <span class="text-highlight">@ Excelerate</span></h3>
+          <span class="job-date">Oct 2025 - Nov 2025</span>
+        </div>
+        <ul class="job-list">
+          <li>Contributed to a 5-member development team for <strong>EduXcel</strong>, a mobile self-learning marketplace.</li>
+          <li>Built role-based features for students and course creators using Flutter & Firebase.</li>
+          <li>Integrated Firestore for real-time content and dynamic UI rendering.</li>
+          <li>Implemented notification features, analytics tracking, and UX enhancements.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <h3>Frontend and Product Dev <span class="text-highlight">@ riidl</span></h3>
+          <span class="job-date">Apr 2025 - Aug 2025</span>
+        </div>
+        <ul class="job-list">
+          <li>Developed UI functionality for <strong>MyEzz</strong> using React, handling image processing and component-level debugging.</li>
+          <li>Set up Razorpay payment gateway integration.</li>
+          <li>Explored WhatsApp Business API automation for chatbot/lead-gen systems.</li>
+          <li>Analyzed market applicability and business use-cases.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <h3>Social Media & Startup Analyst <span class="text-highlight">@ riidl</span></h3>
+          <span class="job-date">Apr 2025 - Aug 2025</span>
+        </div>
+        <ul class="job-list">
+          <li>Executed social media strategies aligned with riidl’s innovation vision.</li>
+          <li>Collaborated with founders to curate stories and promote <strong>#SomaiyaKiSoch</strong>.</li>
+          <li>Documented 1500+ media entries and assisted in PR/outreach.</li>
+          <li>Trained interns on Airtable and assisted in creating investor-ready slide decks.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <h3>Core Operations Team <span class="text-highlight">@ IETE KJSCE</span></h3>
+          <span class="job-date">Jan 2025 - Aug 2025</span>
+        </div>
+        <ul class="job-list">
+          <li>Executed events like Oscillations'25 and InnovAnt Antenna Design Workshop.</li>
+          <li>Managed logistics, on-ground operations, and coordinated timelines with council members.</li>
+          <li>Streamlined event preparation processes for better organization.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Some Things I've Built</h2>
+      <div class="grid-2">
+        
+        <!-- Project 1 -->
+        <article class="card">
+          <h3>SwiftKart</h3>
+          <p>
+            A web-based self-checkout system solving long queues at local stationery shops. Features a responsive UI, Google Sign-In, and smart cart logic.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">In Progress</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <h3>AI Automated Shorts Generator</h3>
+          <p>
+            Serverless automation workflow in n8n to generate YouTube Shorts using LLMs, image generation, and audio synthesis APIs. Fully automated from prompt to publish.
+          </p>
+          <div class="project-tags">
+            <span class="tag">n8n</span>
+            <span class="tag">GPT-4o</span>
+            <span class="tag">YouTube API</span>
+            <span class="tag">Automation</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <h3>EduXcel</h3>
+          <p>
+            Mobile learning application offering course uploads, enrollment, and progress tracking. Designed for both learners and admins with role-based access.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Education</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card">
+          <h3>Da Cool Store</h3>
+          <p>
+            Self-checkout application with a GUI for retail management. Handles real-time checkout, inventory updates, and separate interfaces for staff and customers.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Tkinter</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section style="text-align: center; font-size: 0.9rem; padding: 40px 0;">
+      <p>Designed & Built by Akhil Tyagi</p>
+      <p>
+        <a href="mailto:tyagi.akhil1202@gmail.com">tyagi.akhil1202@gmail.com</a>
+      </p>
+    </section>
+
+  </main>
 </body>
 </html>
