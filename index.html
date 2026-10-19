@@ -3,181 +3,509 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhil Tyagi | Full Stack Developer</title>
-  <meta name="description" content="Portfolio and Resume of Akhil Tyagi, a Full Stack Developer and Competitive Programmer.">
+  <title>Akhil Tyagi | Full Stack & Mobile Developer</title>
+  <meta name="description" content="Portfolio of Akhil Tyagi — Full Stack Developer building scalable mobile, web, and iOS applications with Flutter, FastAPI, Swift, and Firebase.">
+  <link rel="canonical" href="https://akhiltyagi.online/" />
+  
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">AT<span class="accent">.</span></a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-btn">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="container">
     
-    <!-- Hero Section -->
-    <header>
-      <div class="hero-content">
-        <h4>Hi, my name is</h4>
-        <h1 class="hero-title">Akhil Tyagi.</h1>
-        <h2 class="hero-subtitle">I build things for the web & mobile.</h2>
-        <p>
-          I'm a Full Stack Developer and Competitive Programmer based in Mumbai. 
-          I specialize in building scalable applications using Flutter, Python, React, and Firebase.
-          Currently focusing on building accessible, human-centered products.
-        </p>
-        
-        <div class="social-links">
-          <a href="https://github.com/akh1l1202" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/akh1l1202" target="_blank">LinkedIn</a>
-          <a href="mailto:tyagi.akhil1202@gmail.com">Email Me</a>
+    <!-- Hero / About Section -->
+    <section class="hero" id="about">
+      <div class="hero-content fade-up">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for Full-Time & Internship Roles</span>
         </div>
-      </div>
-    </header>
+        
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Akhil Tyagi.</h1>
+        <h2 class="hero-role">Full Stack & Mobile Engineer</h2>
+        
+        <p class="hero-bio">
+          Full Stack Developer with hands-on experience building scalable mobile, web, and iOS applications across 
+          <strong>Flutter</strong>, <strong>FastAPI</strong>, <strong>Swift</strong>, and <strong>Firebase</strong>. 
+          Proven track record delivering end-to-end product features, ML-powered pipelines, and real-world automation systems. 
+          Adept at system design, REST API integration, and cross-platform development.
+        </p>
 
-    <!-- About / Skills Section -->
-    <section id="skills">
-      <h2>Skills & Technologies</h2>
-      <div class="skills-list">
-        <span class="skill-pill">Flutter</span>
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">Firebase</span>
-        <span class="skill-pill">SQL</span>
-        <span class="skill-pill">TypeScript</span>
-        <span class="skill-pill">Tailwind CSS</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">Data Structures</span>
-        <span class="skill-pill">N8N Automation</span>
+        <div class="hero-highlights">
+          <span class="chip">Flutter & Dart</span>
+          <span class="chip">FastAPI & Python</span>
+          <span class="chip">Swift & iOS</span>
+          <span class="chip">Firebase & PostgreSQL</span>
+          <span class="chip">Kotlin & Android SDK</span>
+          <span class="chip">System Design & AI Pipelines</span>
+        </div>
+        
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            View Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn-secondary">Let's Connect</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/akh1l1202" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/akh1l1202" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:tyagi.akhil1202@gmail.com" class="social-icon-link" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.259l4.616-3.741v9.346l-4.616-5.605z"/></svg>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-header">
+        <span class="section-label">Technical Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-desc">Comprehensive toolkit across cross-platform mobile, backend architectures, databases, and intelligent systems.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Languages -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="skill-category-title">Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Swift</span>
+            <span class="skill-tag">HTML / CSS</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="skill-category-title">Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="skill-category-title">Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Firestore</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3 class="skill-category-title">Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Xcode</span>
+            <span class="skill-tag">Android Studio</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">Razorpay</span>
+            <span class="skill-tag">Airtable</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">ngrok</span>
+          </div>
+        </div>
+
+        <!-- AI & Automation -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 4.41-2.87 8.16-6.84 9.49l-.66-.99a8.9 8.9 0 0 0 4.5-8.5c0-4.97-4.03-9-9-9s-9 4.03-9 9a8.9 8.9 0 0 0 4.5 8.5l-.66.99C4.87 20.16 2 16.41 2 12A10 10 0 0 1 12 2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+            <h3 class="skill-category-title">AI & Automation</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM Prompt Engineering</span>
+            <span class="skill-tag">Image / Audio / Video APIs</span>
+            <span class="skill-tag">Face Recognition Pipelines</span>
+            <span class="skill-tag">Workflow Automation (n8n)</span>
+          </div>
+        </div>
+
+        <!-- Concepts & Architecture -->
+        <div class="skill-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="skill-category-title">Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">State Management</span>
+            <span class="skill-tag">Async Programming</span>
+            <span class="skill-tag">Role-Based Access Control</span>
+            <span class="skill-tag">System Design</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Internships / Experience Section -->
     <section id="experience">
-      <h2>Where I've Worked</h2>
-      
-      <div class="timeline-item">
-        <div class="job-header">
-          <h3>Mobile App Dev <span class="text-highlight">@ Excelerate</span></h3>
-          <span class="job-date">Oct 2025 - Nov 2025</span>
-        </div>
-        <ul class="job-list">
-          <li>Contributed to a 5-member development team for <strong>EduXcel</strong>, a mobile self-learning marketplace.</li>
-          <li>Built role-based features for students and course creators using Flutter & Firebase.</li>
-          <li>Integrated Firestore for real-time content and dynamic UI rendering.</li>
-          <li>Implemented notification features, analytics tracking, and UX enhancements.</li>
-        </ul>
+      <div class="section-header">
+        <span class="section-label">Career Journey</span>
+        <h2 class="section-title">Internships & Experience</h2>
+        <p class="section-desc">Practical hands-on roles delivering production features in collaborative engineering environments.</p>
       </div>
 
-      <div class="timeline-item">
-        <div class="job-header">
-          <h3>Frontend and Product Dev <span class="text-highlight">@ riidl</span></h3>
-          <span class="job-date">Apr 2025 - Aug 2025</span>
+      <div class="timeline">
+        
+        <!-- SwDC KJSSE -->
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Flutter Intern</h3>
+                <span class="company-name">SwDC KJSSE</span>
+              </div>
+              <div class="meta-group">
+                <span class="date-badge">Jul 2026 – Aug 2026</span>
+                <span class="location-tag">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  Mumbai, India
+                </span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Built core features of a focus and digital-wellbeing app in <strong>Flutter</strong> within a 4-member team, including the dashboard, AI coach chat, habit tracker with circular streak visualization, usage insights, and schedule generator.</li>
+              <li>Developed native <strong>Kotlin bridges</strong> (<code>UsageStatsManager</code>, <code>AccessibilityService</code>, system alert window) to power Lock Mode with custom strictness levels, app pinning with a hold-to-exit overlay, and custom app include/exclude selection.</li>
+              <li>Integrated the <strong>Gemini-based AI backend</strong> and <strong>cut redundant API calls by 60%</strong> through stricter JSON payloads and caching; added local fallback schedules for when the AI service is unavailable.</li>
+              <li>Debugged physical-device startup crashes using <strong>ADB and Logcat</strong>, traced them to release-build obfuscation stripping Kotlin bridge code, and fixed them with ProGuard keep rules and Gradle configuration updates.</li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Kotlin</span>
+              <span class="tech-pill">Android SDK</span>
+              <span class="tech-pill">Gemini AI</span>
+              <span class="tech-pill">AccessibilityService</span>
+              <span class="tech-pill">Gradle & ProGuard</span>
+            </div>
+          </div>
         </div>
-        <ul class="job-list">
-          <li>Developed UI functionality for <strong>MyEzz</strong> using React, handling image processing and component-level debugging.</li>
-          <li>Set up Razorpay payment gateway integration.</li>
-          <li>Explored WhatsApp Business API automation for chatbot/lead-gen systems.</li>
-          <li>Analyzed market applicability and business use-cases.</li>
-        </ul>
-      </div>
 
-      <div class="timeline-item">
-        <div class="job-header">
-          <h3>Social Media & Startup Analyst <span class="text-highlight">@ riidl</span></h3>
-          <span class="job-date">Apr 2025 - Aug 2025</span>
+        <!-- Excelerate -->
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Mobile App Developer</h3>
+                <span class="company-name">Excelerate</span>
+              </div>
+              <div class="meta-group">
+                <span class="date-badge">Oct 2025 – Nov 2025</span>
+                <span class="location-tag">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  Mumbai, India
+                </span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Engineered core modules of <strong>EduXcel</strong>, a mobile self-learning marketplace, using <strong>Flutter & Firebase</strong> within a 5-member Agile team.</li>
+              <li>Built role-based access for students and course creators with enrollment workflows, Firestore real-time sync, notification systems, and analytics tracking.</li>
+              <li>Applied advanced state management, async architecture patterns, and Git-based collaboration with branching, code reviews, and shared documentation.</li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">Firestore</span>
+              <span class="tech-pill">State Management</span>
+              <span class="tech-pill">Agile</span>
+              <span class="tech-pill">Git</span>
+            </div>
+          </div>
         </div>
-        <ul class="job-list">
-          <li>Executed social media strategies aligned with riidl’s innovation vision.</li>
-          <li>Collaborated with founders to curate stories and promote <strong>#SomaiyaKiSoch</strong>.</li>
-          <li>Documented 1500+ media entries and assisted in PR/outreach.</li>
-          <li>Trained interns on Airtable and assisted in creating investor-ready slide decks.</li>
-        </ul>
-      </div>
 
-      <div class="timeline-item">
-        <div class="job-header">
-          <h3>Core Operations Team <span class="text-highlight">@ IETE KJSCE</span></h3>
-          <span class="job-date">Jan 2025 - Aug 2025</span>
+        <!-- riidl -->
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Frontend & Product Developer – MyEzz</h3>
+                <span class="company-name">riidl (Somaiya University Incubation Lab)</span>
+              </div>
+              <div class="meta-group">
+                <span class="date-badge">Apr 2025 – Aug 2025</span>
+                <span class="location-tag">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  Mumbai, India
+                </span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Developed responsive <strong>React UI components</strong> (image handling, input validation, modular layouts) for the MyEzz platform.</li>
+              <li>Integrated <strong>Razorpay payment gateway</strong> end-to-end; researched WhatsApp Business API automation for chatbot and lead-generation scoping.</li>
+              <li>Built investor-ready pitch decks from structured startup data; onboarded and trained new interns on Airtable workflows.</li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Razorpay</span>
+              <span class="tech-pill">Airtable</span>
+              <span class="tech-pill">UI/UX</span>
+            </div>
+          </div>
         </div>
-        <ul class="job-list">
-          <li>Executed events like Oscillations'25 and InnovAnt Antenna Design Workshop.</li>
-          <li>Managed logistics, on-ground operations, and coordinated timelines with council members.</li>
-          <li>Streamlined event preparation processes for better organization.</li>
-        </ul>
-      </div>
 
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Some Things I've Built</h2>
-      <div class="grid-2">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Key systems engineered across behavior-change mobile platforms, native iOS apps, and computer vision.</p>
+      </div>
+
+      <div class="projects-grid">
         
-        <!-- Project 1 -->
-        <article class="card">
-          <h3>SwiftKart</h3>
-          <p>
-            A web-based self-checkout system solving long queues at local stationery shops. Features a responsive UI, Google Sign-In, and smart cart logic.
-          </p>
+        <!-- Project 1: Guilt Eater -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-folder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+
+          <h3 class="project-name">Guilt Eater</h3>
+          <p class="project-tagline">Screen Addiction Behavior-Change Platform</p>
+          
+          <ul class="project-desc-list">
+            <li>Architected a full-stack mobile platform leveraging <strong>loss aversion psychology</strong> — users stake real money against screen time limits, with violations triggering automatic wallet penalties.</li>
+            <li>Built a <strong>Kotlin Android core engine</strong> with device admin enforcement, accessibility service blocking, anti-uninstall protection, and tamper detection.</li>
+            <li>Integrated <strong>Razorpay</strong> deposit/payout flows and implemented a dedicated parent-child accountability mode.</li>
+          </ul>
+
           <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Tailwind</span>
-            <span class="tag">In Progress</span>
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Razorpay</span>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="card">
-          <h3>AI Automated Shorts Generator</h3>
-          <p>
-            Serverless automation workflow in n8n to generate YouTube Shorts using LLMs, image generation, and audio synthesis APIs. Fully automated from prompt to publish.
-          </p>
+        <!-- Project 2: ReturnIT -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-folder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <span class="project-year">2026</span>
+          </div>
+
+          <h3 class="project-name">ReturnIT</h3>
+          <p class="project-tagline">Campus iOS Lost & Found App</p>
+          
+          <ul class="project-desc-list">
+            <li>Built a campus-wide lost and found iOS app using <strong>Swift + UIKit (Storyboard)</strong> with Firebase Auth, Firestore, and Storage for item posting, browsing, and contact workflows.</li>
+            <li>Implemented multi-screen navigation (Login, Home, Post Item, Item Detail), image uploads via <code>UIImagePickerController</code>, and item resolution management.</li>
+          </ul>
+
           <div class="project-tags">
-            <span class="tag">n8n</span>
-            <span class="tag">GPT-4o</span>
-            <span class="tag">YouTube API</span>
-            <span class="tag">Automation</span>
+            <span class="project-tag">Swift</span>
+            <span class="project-tag">UIKit</span>
+            <span class="project-tag">Storyboard</span>
+            <span class="project-tag">Firebase Auth</span>
+            <span class="project-tag">Firestore</span>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="card">
-          <h3>EduXcel</h3>
-          <p>
-            Mobile learning application offering course uploads, enrollment, and progress tracking. Designed for both learners and admins with role-based access.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Education</span>
+        <!-- Project 3: FaceMark -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-folder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <span class="project-year">2025</span>
           </div>
-        </article>
 
-        <!-- Project 4 -->
-        <article class="card">
-          <h3>Da Cool Store</h3>
-          <p>
-            Self-checkout application with a GUI for retail management. Handles real-time checkout, inventory updates, and separate interfaces for staff and customers.
-          </p>
+          <h3 class="project-name">FaceMark</h3>
+          <p class="project-tagline">Real-Time Face Recognition Attendance System</p>
+          
+          <ul class="project-desc-list">
+            <li>Built a full-stack attendance system with a <strong>Flutter</strong> mobile frontend and <strong>FastAPI</strong> backend, featuring real-time face capture, encoding, and recognition pipeline using OpenCV and dlib.</li>
+            <li>Designed REST API endpoints for face registration, attendance marking, and history retrieval; used ngrok for mobile-backend tunneling and structured a normalized DB schema for users, encodings, and logs.</li>
+          </ul>
+
           <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Tkinter</span>
-            <span class="tag">MySQL</span>
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">dlib</span>
+            <span class="project-tag">ngrok</span>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Footer -->
-    <section style="text-align: center; font-size: 0.9rem; padding: 40px 0;">
-      <p>Designed & Built by Akhil Tyagi</p>
-      <p>
-        <a href="mailto:tyagi.akhil1202@gmail.com">tyagi.akhil1202@gmail.com</a>
-      </p>
+    <!-- Education Section -->
+    <section id="education">
+      <div class="section-header">
+        <span class="section-label">Academics</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-header">
+          <div>
+            <h3 class="edu-institution">K.J. Somaiya College of Engineering</h3>
+            <p class="edu-degree">Bachelor of Technology (B.Tech)</p>
+          </div>
+          <span class="location-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Mumbai, India
+          </span>
+        </div>
+        
+        <div>
+          <h4 class="edu-coursework-title">Relevant Coursework:</h4>
+          <div class="course-tags">
+            <span class="course-tag">Data Structures</span>
+            <span class="course-tag">Algorithms</span>
+            <span class="course-tag">Database Management Systems (DBMS)</span>
+            <span class="course-tag">Operating Systems (OS)</span>
+            <span class="course-tag">Computer Networks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Build Something Meaningful</h2>
+        <p class="contact-text">
+          Whether you're looking for an engineer for mobile development, full-stack architectures, or intelligent system design — my inbox is always open.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:tyagi.akhil1202@gmail.com" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            tyagi.akhil1202@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/akh1l1202" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            LinkedIn Profile
+          </a>
+        </div>
+
+        <div class="contact-meta">
+          <span class="location-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Mumbai, India
+          </span>
+          <span>•</span>
+          <span>Open to Worldwide Remote Opportunities</span>
+        </div>
+      </div>
     </section>
 
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Designed & Built by Akhil Tyagi • Hosted on <a href="https://github.com/akh1l1202/akhiltyagi.online" target="_blank" rel="noopener noreferrer">GitHub Pages</a></p>
+    </div>
+  </footer>
+
+  <!-- Simple script for mobile navigation toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
